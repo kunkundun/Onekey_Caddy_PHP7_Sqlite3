@@ -2,7 +2,8 @@
 
 #====================================================
 #	System Request: Centos 7+ Debian 8+
-#	Author: dylanbai8
+#	* 整理：kunkundun
+#       * Author: dylanbai8
 #	* 小内存VPS 一键安装 Caddy+PHP7+Sqlite3 环境 （支持VPS最小内存64M）
 #	* 一键绑定域名自动生成SSL证书开启https（ssl自动续期）、支持IPv6
 #	* 一键安装 typecho、wordpress、zblog、kodexplorer、laverna、一键整站备份
@@ -56,7 +57,7 @@ port1="80"
 port2="443"
 
 # alterId值越小越省内存
-alterId="8"
+alterId="64"
 #用于websocket分流的随机端口
 let port3=$RANDOM+10000
 
@@ -72,14 +73,14 @@ wwwroot="/www"
 typecho_path="https://github.com/typecho/typecho/releases/download/v1.1-17.10.30-release/1.1.17.10.30.-release.tar.gz"
 
 # https://github.com/kalcaddle/KodExplorer/releases
-kodcloud_path="https://github.com/kalcaddle/KodExplorer/archive/4.35.tar.gz"
+kodcloud_path="https://github.com/kalcaddle/KodExplorer/archive/4.39.tar.gz"
 
 wordpress_path="https://wordpress.org/latest.tar.gz"
 # https://github.com/jumpstarter-io/wp-sqlite-integration
 wordpress_sqlite="https://downloads.wordpress.org/plugin/sqlite-integration.1.8.1.zip"
 
 # https://github.com/zblogcn/zblogphp/releases
-zblog_path="https://github.com/zblogcn/zblogphp/archive/1740.tar.gz"
+zblog_path="https://update.zblogcn.com/zip/Z-BlogPHP_1_6_0_2090_Valyria.zip"
 
 # https://github.com/Laverna/static-laverna
 laverna_path="https://github.com/Laverna/static-laverna/archive/gh-pages.zip"
